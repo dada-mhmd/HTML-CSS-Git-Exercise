@@ -1,1 +1,12 @@
 /* Add your CSS code below */
+#first-message{
+    background-color: red;
+}
+
+article :nth-of-type(1) {
+    background-color: cadetblue;
+}
+
+.message--latest {
+    background-color: yellow;
+}
