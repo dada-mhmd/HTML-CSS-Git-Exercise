@@ -61,11 +61,11 @@
               <legend>Delivery Address</legend>
               <p>
                 <label for="delivery-address-1">Address Line 1</label>
-                <input type="text" name="delivery-address-1" id="delivery-address-1" />
+                <input type="text" name="delivery-address-1" id="delivery-address-1" required />
               </p>
               <p>
                 <label for="delivery-address-2">Address Line 2</label>
-                <input type="text" name="delivery-address-2" id="delivery-address-2" />
+                <input type="text" name="delivery-address-2" id="delivery-address-2" required />
               </p>
               <p>
                 <label for="delivery-address-postcode">Postcode</label>
@@ -73,17 +73,31 @@
                   type="text"
                   name="delivery-address-postcode"
                   id="delivery-address-postcode"
+                  required
                 />
               </p>
               <p>
                 <label for="delivery-address-city">City</label>
-                <input type="text" name="delivery-address-city" id="delivery-address-city" />
+                <input
+                  type="text"
+                  name="delivery-address-city"
+                  id="delivery-address-city"
+                  checked
+                  required
+                />
               </p>
               <p>
                 <label for="delivery-country">Country</label>
-                <input type="text" name="delivery-country" id="delivery-country" />
+                <input
+                  type="text"
+                  name="delivery-country"
+                  id="delivery-country"
+                  value="United Kingdom"
+                  disabled
+                  readonly
+                />
               </p>
-              <fieldset>
+              <fieldset aria-checked="false">
                 <legend>Delivery Options</legend>
                 <label>
                   <input
@@ -91,6 +105,7 @@
                     name="delivery-option"
                     id="delivery-option"
                     value="standard"
+                    required
                   />
                   Royal Mail
                 </label>
